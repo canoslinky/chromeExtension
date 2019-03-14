@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">   
+        <title>Configuracion tu extensión</title>
+    </head>
+    
+    <body>
+        <div class="modal-content" ></div>
+            <div class="modal-header">
+                <h2>Cuantos d&iacute;as tienes que trabajar para comprarte eso?</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Periodo de ingreso:</h3>
+                <div class="caja">
+                    <select id="period" class="select-style">
+                        <option value="hour" selected>Hora</option>
+                        <option value="fortnight">Quincena</option>
+                        <option value="month">Mes</option>
+                    </select>
+                </div>
+                <h3>Monto que asignas a gustos:</h3>
+                <div style="text-align: center;"> 
+                <label >
+                    <input type="number" id="amount" class="currency" min="10" max="500000.00">
+                </label>
+                </div>
+                
+                <br>
+            </div>
+            <div class="modal-footer">
+                <div id="status"></div>
+                <button id="save" class="button">Guardar</button>
+            </div>
+            <script src="scripts/options.js"></script>
+        </div>
+    </body>
+</html>
